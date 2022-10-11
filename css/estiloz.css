@@ -9,31 +9,14 @@ p {
   margin: 0;
 }
 
-body {
-  background-color: #408975;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 header {
   display: grid;
   justify-content: center;
 }
-
-.logo {
+header .logo {
   text-align: center;
 }
-
-ul {
-  list-style: none;
-}
-
-li {
-  display: inline-block;
-}
-
-.oscuro {
+header .logo .oscuro {
   background-color: red;
   width: 0 auto;
   text-align: center;
@@ -42,21 +25,31 @@ li {
   margin: 10px 500px 100px 500px;
 }
 
+body {
+  background-color: #408975;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .redes {
   background-color: black;
   text-align: center;
   padding: 20px;
 }
-
-.facebook:hover {
+.redes ul {
+  list-style: none;
+}
+.redes ul li {
+  display: inline-block;
+}
+.redes ul li .facebook:hover {
   transform: scale(3);
 }
-
-.instagram:hover {
+.redes ul li .facebook:hover .instagram:hover {
   transform: scale(3);
 }
-
-.twitter:hover {
+.redes ul li .facebook:hover .instagram:hover .twitter:hover {
   transform: scale(3);
 }
 
